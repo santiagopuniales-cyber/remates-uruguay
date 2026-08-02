@@ -421,6 +421,52 @@
     outline-offset: 2px;
   }
 
+  /* ---- enlace a la fuente original ---- */
+
+  .fuentes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+  }
+
+  .boton-fuente {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .7rem 1.05rem;
+    border: 1.5px solid var(--cota);
+    background: var(--papel);
+    color: var(--cota);
+    font-family: var(--mono);
+    font-size: .74rem;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.3;
+    transition: background .15s ease, color .15s ease;
+  }
+  .boton-fuente::after {
+    content: "↗";
+    font-size: .95em;
+  }
+  .boton-fuente:hover {
+    background: var(--cota);
+    color: var(--papel);
+  }
+  .boton-fuente.secundario {
+    border-color: var(--linea-fuerte);
+    color: var(--tinta-2);
+  }
+  .boton-fuente.secundario:hover {
+    background: var(--tinta-2);
+    color: var(--papel);
+    border-color: var(--tinta-2);
+  }
+
+  @media (max-width: 34rem) {
+    .boton-fuente { width: 100%; justify-content: space-between; }
+  }
+
   .nota {
     font-size: .89rem;
     color: var(--tinta-3);
@@ -730,13 +776,16 @@
         </p>
       </div>
 
+      <div class="fuentes">
+        <a class="boton-fuente" href="https://www.rematadores.com/rematadores/idremate_2020.asp?k=1&amp;idremate=32357">Ver el aviso y el edicto completo</a>
+      </div>
+
       <p class="nota">
         Rematador Daniel Blanco (mat. 5640), cel. 099537163,
         rematesblanco@hotmail.com · Juzgado Letrado Civil de 1º Turno, IUE
         2-12009/2022 · Edicto del 29 de julio de 2026, con certificados
         registrales al 22 de julio · Salón de la Asociación Nacional de
-        Rematadores, Av. Uruguay 826 ·
-        <a href="https://www.rematadores.com/rematadores/idremate_2020.asp?k=1&amp;idremate=32357">Ver el aviso y el edicto completo</a>
+        Rematadores, Av. Uruguay 826.
       </p>
     </article>
 
@@ -835,13 +884,16 @@
         competencia seria, el negocio se termina rápido.
       </p>
 
+      <div class="fuentes">
+        <a class="boton-fuente" href="https://www.anv.gub.uy/sites/default/files/2026-07/06_INT_1300_SARAND%C3%8D_SIN_NRO_ESQUINA_18_DE_JULIO_MALDONADO.pdf">Ver el edicto completo (PDF)</a>
+        <a class="boton-fuente secundario" href="https://www.anv.gub.uy/remates">Nómina de remates de la ANV</a>
+      </div>
+
       <p class="nota">
         Rematador Carlos Julio Méndez Acosta, cel. 099724990 · Se puede financiar
         hasta UR 2.151,75 en unidades indexadas, pero solo si el comprador
         califica como sujeto de crédito de la ANV. Gastos de remate: $27.179.
-        Remata en la oficina de la ANV en Maldonado, Solís y Bergalli ·
-        <a href="https://www.anv.gub.uy/sites/default/files/2026-07/06_INT_1300_SARAND%C3%8D_SIN_NRO_ESQUINA_18_DE_JULIO_MALDONADO.pdf">Ver el edicto completo (PDF de la ANV)</a>
-        · <a href="https://www.anv.gub.uy/remates">Nómina de remates de la ANV</a>
+        Remata en la oficina de la ANV en Maldonado, Solís y Bergalli.
       </p>
     </article>
 
