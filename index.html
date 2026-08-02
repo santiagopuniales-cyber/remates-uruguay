@@ -1,0 +1,1417 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Remates Uruguay — qué comprar de acá en adelante</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  * { margin: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { min-height: 100vh; }
+  img, picture, video, canvas, svg { display: block; max-width: 100%; }
+  input, button, textarea, select { font: inherit; }
+  p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+  table { border-collapse: collapse; }
+</style>
+</head>
+<body>
+<style>
+  :root {
+    --papel: #F7F6F2;
+    --papel-2: #EFEDE6;
+    --tinta: #16324F;
+    --tinta-2: #46586B;
+    --tinta-3: #7C8895;
+    --cota: #0E7C9B;
+    --alerta: #9A6408;
+    --alerta-bg: #FBF3E2;
+    --bien: #3F6B53;
+    --bien-bg: #EDF3EE;
+    --linea: #D6D3C9;
+    --linea-fuerte: #B9B5A8;
+    --sombra: rgba(22, 50, 79, .07);
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --papel: #0C1D2E;
+      --papel-2: #12283D;
+      --tinta: #DCE6EE;
+      --tinta-2: #9DB2C4;
+      --tinta-3: #6E869C;
+      --cota: #4FC3E8;
+      --alerta: #E8B45C;
+      --alerta-bg: #2A2113;
+      --bien: #7FC49A;
+      --bien-bg: #13291E;
+      --linea: #24405A;
+      --linea-fuerte: #365272;
+      --sombra: rgba(0, 0, 0, .3);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --papel: #0C1D2E;
+    --papel-2: #12283D;
+    --tinta: #DCE6EE;
+    --tinta-2: #9DB2C4;
+    --tinta-3: #6E869C;
+    --cota: #4FC3E8;
+    --alerta: #E8B45C;
+    --alerta-bg: #2A2113;
+    --bien: #7FC49A;
+    --bien-bg: #13291E;
+    --linea: #24405A;
+    --linea-fuerte: #365272;
+    --sombra: rgba(0, 0, 0, .3);
+  }
+
+  :root[data-theme="light"] {
+    --papel: #F7F6F2;
+    --papel-2: #EFEDE6;
+    --tinta: #16324F;
+    --tinta-2: #46586B;
+    --tinta-3: #7C8895;
+    --cota: #0E7C9B;
+    --alerta: #9A6408;
+    --alerta-bg: #FBF3E2;
+    --bien: #3F6B53;
+    --bien-bg: #EDF3EE;
+    --linea: #D6D3C9;
+    --linea-fuerte: #B9B5A8;
+    --sombra: rgba(22, 50, 79, .07);
+  }
+
+  body {
+    background: var(--papel);
+    color: var(--tinta);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hoja {
+    max-width: 47rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* ---- encabezado ---- */
+
+  .cabecera { display: flex; flex-direction: column; gap: 1rem; }
+
+  .sello {
+    font-family: var(--mono);
+    font-size: .69rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--cota);
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1.1rem;
+  }
+  .sello span { white-space: nowrap; }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.1rem, 6vw, 3.05rem);
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -.018em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .bajada {
+    font-size: 1.12rem;
+    color: var(--tinta-2);
+    max-width: 40ch;
+    text-wrap: pretty;
+  }
+
+  .regla {
+    height: 3px;
+    background: var(--tinta);
+    border: 0;
+    margin: 0;
+  }
+  .regla-fina {
+    height: 1px;
+    background: var(--linea);
+    border: 0;
+    margin: 0;
+  }
+
+  /* ---- veredicto ---- */
+
+  .veredicto {
+    background: var(--papel-2);
+    border: 1px solid var(--linea);
+    border-left: 3px solid var(--cota);
+    padding: 1.4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+  .veredicto p { margin: 0; }
+  .veredicto strong { font-weight: 650; }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.72rem;
+    font-weight: 600;
+    letter-spacing: -.012em;
+    line-height: 1.2;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: var(--serif);
+    font-size: 1.16rem;
+    font-weight: 650;
+    margin: 0;
+  }
+
+  section { display: flex; flex-direction: column; gap: 1.15rem; }
+
+  p { margin: 0; text-wrap: pretty; }
+
+  /* ---- fichas de candidatos ---- */
+
+  .ficha {
+    border: 1px solid var(--linea);
+    background: var(--papel-2);
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px var(--sombra);
+  }
+
+  .ficha-cab {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+  }
+
+  .puesto {
+    font-family: var(--mono);
+    font-size: .7rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--tinta-3);
+    display: flex;
+    align-items: baseline;
+    gap: .6rem;
+    flex-wrap: wrap;
+  }
+  .puesto .n {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    color: var(--cota);
+    font-weight: 600;
+  }
+
+  .ficha h3 { font-size: 1.3rem; line-height: 1.25; }
+
+  .sub {
+    color: var(--tinta-2);
+    font-size: .95rem;
+  }
+
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .chip {
+    font-family: var(--mono);
+    font-size: .68rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: .26rem .6rem;
+    border: 1px solid var(--linea-fuerte);
+    color: var(--tinta-2);
+    white-space: nowrap;
+  }
+  .chip.ok { color: var(--bien); border-color: var(--bien); background: var(--bien-bg); }
+  .chip.mal { color: var(--alerta); border-color: var(--alerta); background: var(--alerta-bg); }
+
+  /* ---- cifras ---- */
+
+  .cifras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    gap: 1px;
+    background: var(--linea);
+    border: 1px solid var(--linea);
+  }
+  .cifra {
+    background: var(--papel);
+    padding: .8rem .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .18rem;
+  }
+  .cifra dt {
+    font-family: var(--mono);
+    font-size: .64rem;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    color: var(--tinta-3);
+  }
+  .cifra dd {
+    margin: 0;
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 1.14rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+  .cifra dd.destacada { color: var(--cota); }
+  .cifra dd small { font-size: .72rem; font-weight: 400; color: var(--tinta-3); }
+
+  /* ---- listas de argumento ---- */
+
+  .argumentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.15rem;
+  }
+
+  .arg { display: flex; flex-direction: column; gap: .5rem; }
+  .arg-titulo {
+    font-family: var(--mono);
+    font-size: .67rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+  }
+  .arg.favor .arg-titulo { color: var(--bien); }
+  .arg.contra .arg-titulo { color: var(--alerta); }
+
+  .arg ul { margin: 0; padding-left: 1.05rem; display: flex; flex-direction: column; gap: .45rem; }
+  .arg li { font-size: .93rem; line-height: 1.5; color: var(--tinta-2); }
+  .arg li::marker { color: var(--tinta-3); }
+
+  /* ---- tablas ---- */
+
+  .tabla-scroll { overflow-x: auto; border: 1px solid var(--linea); }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: .88rem;
+    background: var(--papel-2);
+  }
+  caption {
+    caption-side: bottom;
+    text-align: left;
+    padding: .7rem .85rem;
+    font-size: .82rem;
+    color: var(--tinta-3);
+    border-top: 1px solid var(--linea);
+  }
+  th, td {
+    padding: .55rem .85rem;
+    text-align: left;
+    border-bottom: 1px solid var(--linea);
+    white-space: nowrap;
+  }
+  thead th {
+    font-family: var(--mono);
+    font-size: .64rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--tinta-3);
+    font-weight: 500;
+    border-bottom: 1px solid var(--linea-fuerte);
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  .num {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .marca { color: var(--alerta); font-weight: 600; }
+  .tenue { color: var(--tinta-3); }
+
+  /* ---- sensibilidad ---- */
+
+  .rango {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+  }
+  .barra-fila {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr 5.5rem;
+    align-items: center;
+    gap: .75rem;
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: .85rem;
+  }
+  .barra-pista {
+    height: 1.5rem;
+    background: var(--papel-2);
+    border: 1px solid var(--linea);
+    position: relative;
+  }
+  .barra-relleno {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: var(--cota);
+    opacity: .22;
+    border-right: 2px solid var(--cota);
+  }
+  .barra-fila .tope { text-align: right; font-weight: 600; color: var(--cota); }
+
+  /* ---- pasos ---- */
+
+  ol.pasos {
+    margin: 0;
+    padding-left: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+  ol.pasos li { padding-left: .25rem; }
+  ol.pasos li::marker {
+    font-family: var(--mono);
+    font-size: .82rem;
+    color: var(--cota);
+  }
+  ol.pasos strong { font-weight: 650; }
+
+  a {
+    color: var(--cota);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--cota);
+    outline-offset: 2px;
+  }
+
+  .nota {
+    font-size: .89rem;
+    color: var(--tinta-3);
+    line-height: 1.55;
+  }
+
+  .pie {
+    border-top: 1px solid var(--linea);
+    padding-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  @media (max-width: 34rem) {
+    body { font-size: 16px; }
+    .hoja { padding: 2.5rem 1.1rem 4rem; gap: 2.4rem; }
+    .ficha { padding: 1.1rem; }
+    .barra-fila { grid-template-columns: 4.6rem 1fr 4.6rem; gap: .5rem; font-size: .78rem; }
+  }
+</style>
+
+<div class="hoja">
+
+  <header class="cabecera">
+    <div class="sello">
+      <span>Relevamiento 31 · 07 · 2026</span>
+      <span>7 fuentes</span>
+      <span>2.908 avisos de mercado</span>
+    </div>
+    <hr class="regla">
+    <h1>Qué se puede comprar de acá en adelante</h1>
+    <p class="bajada">
+      Remates con fecha del 1 de agosto en adelante, filtrados contra un
+      presupuesto de USD 50–60k de compra más hasta 15k de reforma.
+    </p>
+  </header>
+
+  <div class="veredicto">
+    <p>
+      <strong>Se revisaron las siete fuentes de remates que existen en Uruguay
+      y la conclusión no cambió:</strong> el apartamento de 8 de Octubre y Vera,
+      que remata el 2 de setiembre, sigue siendo el único que cumple el caso
+      completo.
+    </p>
+    <p>
+      Los once de la Agencia Nacional de Vivienda que entran por precio comparten
+      dos problemas que el precio no compensa: <strong>ninguno está
+      desocupado</strong> y casi todos están en ciudades donde hay menos de
+      quince propiedades en venta en total. El BHU, que vende sin puja y con
+      visita, <strong>no vende barato</strong>: sus precios están a mercado o por
+      encima.
+    </p>
+    <p>
+      Lo que sí cambió es que ahora hay datos donde antes había suposiciones.
+      Midiendo los precios de martillo que publica la Asociación de Rematadores,
+      <strong>un apartamento en remate se adjudica a la mitad de lo que vale</strong>
+      — mediana del 58%, con casos entre 27% y 80%.
+    </p>
+    <p>
+      Y una corrección al informe anterior: descartar el apartamento de Maldonado
+      por estar ocupado era demasiado simple. La ANV publica que el desalojo tarda
+      de seis a diez meses, así que ese costo se puede calcular. Medido en retorno
+      anualizado, <strong>en su escenario central le gana al de Montevideo</strong>.
+      Sigue segundo, pero por la forma del riesgo y no por la rentabilidad.
+    </p>
+    <p>
+      También se probó la alternativa obvia —comprar un aviso común barato, sin
+      remate— revisando 3.106 avisos. <strong>Ninguna compra del mercado abierto
+      le gana al remate</strong>, y los descuentos más llamativos resultaron ser
+      deuda hipotecaria escondida.
+    </p>
+  </div>
+
+  <!-- ============ 1 ============ -->
+  <section>
+    <h2>El ranking</h2>
+
+    <article class="ficha">
+      <div class="ficha-cab">
+        <div class="puesto"><span class="n">1</span> <span>La recomendación</span></div>
+        <h3>Apartamento en Av. 8 de Octubre 4444 esq. Vera</h3>
+        <p class="sub">
+          Edificio Vera, segundo piso · Padrón 63.417/202 · 67,05 m², 2 dormitorios,
+          2 baños · Villa Española / La Unión, Montevideo
+        </p>
+        <div class="chips">
+          <span class="chip">Miércoles 2 de setiembre, 13:30</span>
+          <span class="chip">Sin base, al mejor postor</span>
+          <span class="chip ok">Se puede visitar</span>
+          <span class="chip ok">No es ejecución hipotecaria</span>
+        </div>
+      </div>
+
+      <dl class="cifras">
+        <div class="cifra">
+          <dt>Tope de puja</dt>
+          <dd class="destacada">48.000</dd>
+        </div>
+        <div class="cifra">
+          <dt>Mercado de la zona</dt>
+          <dd>87.000</dd>
+        </div>
+        <div class="cifra">
+          <dt>Comparables</dt>
+          <dd>35 <small>de 50–84 m²</small></dd>
+        </div>
+        <div class="cifra">
+          <dt>En venta a 3 km</dt>
+          <dd>261 <small>aptos</small></dd>
+        </div>
+      </dl>
+
+      <p>
+        Es el único de toda la lista que se puede ir a ver antes de comprarlo: el
+        rematador habilita visitas a partir del 10 de agosto. Y es el único que no
+        sale de una ejecución hipotecaria — acá no hay un deudor a desalojar, sino
+        dos copropietarios que no se pusieron de acuerdo y un juez que ordenó
+        vender. Eso elimina de raíz el problema que arruina a todos los demás.
+      </p>
+
+      <p>
+        Al no tener base, el precio lo pone la sala. El número que importa es
+        hasta dónde conviene pujar, y eso depende de a cuánto se logre revender:
+      </p>
+
+      <div class="rango" role="img" aria-label="Tope de puja según precio de reventa: vendiendo a 75.000 el tope es 39.573; a 80.000 es 43.070; a 85.000 es 46.567; a 90.000 es 50.064; a 95.000 es 53.562.">
+        <div class="barra-fila">
+          <span class="tenue">vende a</span>
+          <span class="tenue" style="font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;">pujar hasta</span>
+          <span></span>
+        </div>
+        <div class="barra-fila">
+          <span>75.000</span>
+          <span class="barra-pista"><span class="barra-relleno" style="width:74%"></span></span>
+          <span class="tope">39.573</span>
+        </div>
+        <div class="barra-fila">
+          <span>80.000</span>
+          <span class="barra-pista"><span class="barra-relleno" style="width:80%"></span></span>
+          <span class="tope">43.070</span>
+        </div>
+        <div class="barra-fila">
+          <span>85.000</span>
+          <span class="barra-pista"><span class="barra-relleno" style="width:87%"></span></span>
+          <span class="tope">46.567</span>
+        </div>
+        <div class="barra-fila">
+          <span>90.000</span>
+          <span class="barra-pista"><span class="barra-relleno" style="width:94%"></span></span>
+          <span class="tope">50.064</span>
+        </div>
+        <div class="barra-fila">
+          <span>95.000</span>
+          <span class="barra-pista"><span class="barra-relleno" style="width:100%"></span></span>
+          <span class="tope">53.562</span>
+        </div>
+      </div>
+
+      <p class="nota">
+        Cada tope ya descuenta la comisión del rematador (3,66%), escritura (3%),
+        ITP (2%), USD 14.000 de reforma y un 5% de costos al vender, y deja un
+        retorno del 25% sobre todo lo invertido.
+        <strong>El número a llevar escrito a la sala es 50.000</strong>: arriba
+        de eso el negocio se lo come la reforma.
+      </p>
+
+      <p class="nota">
+        Para asegurar esa valuación se relevaron 302 avisos más de los barrios
+        que rodean la esquina, porque apoyar una decisión de 50.000 dólares en
+        cinco comparables era poco. Con la muestra completa el valor converge:
+        <strong>87.000</strong> con 10 comparables a menos de 800 metros y
+        <strong>90.000</strong> con 35 a menos de 1,5 km. Una lectura intermedia
+        de 78.000 salía de una muestra de cinco avisos y no se sostuvo.
+      </p>
+
+      <div class="veredicto" style="border-left-color: var(--alerta);">
+        <p>
+          <strong>El tope correcto es 48.000, y hay que decir algo incómodo:</strong>
+          el precio típico de adjudicación está por encima. Con el valor de
+          mercado afinado en 87.000, pagar 48.000 deja el 25% de retorno buscado.
+          Pero el descuento histórico (58% de 87.000) predice que se adjudique en
+          <strong>50.460</strong>.
+        </p>
+        <p>
+          O sea: si sale en su precio normal, el retorno es del <strong>20%, no
+          del 25%</strong>. Sigue siendo un buen negocio, pero no el que
+          prometía el cálculo inicial. La ganancia grande aparece sólo si se
+          compra por debajo del tope, que es exactamente lo que pasa cuando no
+          aparece competencia seria.
+        </p>
+        <p class="nota" style="margin:0">
+          Lo bueno de que no tenga base: si la puja sube, uno se levanta y se va
+          sin haber perdido nada. Esa opción de salida vale más de lo que parece
+          — el candidato ② no la tiene.
+        </p>
+      </div>
+
+      <div class="argumentos">
+        <div class="arg favor">
+          <div class="arg-titulo">A favor</div>
+          <ul>
+            <li>Primaria y Contribución Inmobiliaria se descuentan del precio del
+              remate, no se pagan aparte.</li>
+            <li>Visitas habilitadas desde el 10 de agosto y expediente a
+              disposición en la Sede.</li>
+            <li>Zona con salida real: 261 apartamentos en venta a 3 km, la mayor
+              liquidez de toda la lista.</li>
+            <li>Un mes para estudiarlo con calma.</li>
+          </ul>
+        </div>
+        <div class="arg contra">
+          <div class="arg-titulo">Riesgos que hay que cerrar antes</div>
+          <ul>
+            <li><strong>Hay una partición parcial de 2012 que nunca se inscribió.</strong>
+              Lo dice el edicto. Que un escribano lo revise antes de pujar.</li>
+            <li>El edicto dice que se desconoce la deuda de gastos comunes. El
+              aviso habla de "gastos comunes bajos", que es la cuota mensual, no la
+              deuda acumulada, y esa la hereda el comprador.</li>
+            <li>Tampoco se conoce la situación ocupacional ni si hay
+              construcciones sin declarar ante la Intendencia o el BPS.</li>
+            <li>En las fotos del edificio no se ve ascensor y el apartamento está
+              en el segundo piso. Sobre avenida transitada.</li>
+            <li>Saldo de precio en 20 días corridos, sin pausa por ferias
+              judiciales.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="nota">
+        Rematador Daniel Blanco (mat. 5640), cel. 099537163 · Juzgado Letrado Civil
+        de 1º Turno, IUE 2-12009/2022 · Salón de la Asociación Nacional de
+        Rematadores, Av. Uruguay 826 ·
+        <a href="https://www.rematadores.com/rematadores/idremate_2020.asp?k=1&amp;idremate=32357">Ver el aviso y el edicto completo</a>
+      </p>
+    </article>
+
+    <!-- ============ 2 ============ -->
+    <article class="ficha">
+      <div class="ficha-cab">
+        <div class="puesto"><span class="n">2</span> <span>Mejor número, peor riesgo</span></div>
+        <h3>Apartamento en Sarandí esq. 18 de Julio, block K</h3>
+        <p class="sub">
+          Unidad 007 · Padrón 2.577/K/007 · 51,41 m², 2 dormitorios ·
+          Centro de Maldonado
+        </p>
+        <div class="chips">
+          <span class="chip">Jueves 6 de agosto, 13:00</span>
+          <span class="chip">Base USD 51.594</span>
+          <span class="chip mal">Ocupado</span>
+          <span class="chip mal">Solo 6 días para estudiarlo</span>
+        </div>
+      </div>
+
+      <dl class="cifras">
+        <div class="cifra">
+          <dt>Compra total</dt>
+          <dd class="destacada">55.995</dd>
+        </div>
+        <div class="cifra">
+          <dt>Tasación de la ANV</dt>
+          <dd>108.411</dd>
+        </div>
+        <div class="cifra">
+          <dt>Margen con reforma</dt>
+          <dd>43.264 <small>(62%)</small></dd>
+        </div>
+        <div class="cifra">
+          <dt>En venta a 3 km</dt>
+          <dd>21 <small>aptos</small></dd>
+        </div>
+      </dl>
+
+      <p>
+        Sobre el papel es el mejor negocio de todos: se compra a 1.079 USD/m² en
+        una zona donde el cuartil más barato del mercado está en 2.296. Los cinco
+        comparables son apartamentos de 2 dormitorios en buen estado a menos de
+        1,2 km, entre 109.000 y 165.000 dólares. La base es exactamente la mitad
+        de la tasación oficial, como en toda la cartera de la ANV.
+      </p>
+
+      <p>
+        <strong>El problema está en la línea que la nómina no publica y el edicto
+        sí:</strong> «el bien se encuentra ocupado». Y el mismo edicto aclara que
+        el trámite para entregarlo libre de ocupantes «no obstará a la obligación
+        del mejor postor de integrar el precio y otorgar la escritura». Traducido:
+        se paga el cien por ciento, se escritura, y recién después empieza el
+        desalojo. No se puede reformar lo que no se puede ocupar.
+      </p>
+
+      <div class="veredicto" style="border-left-color: var(--alerta);">
+        <p>
+          <strong>Tengo que corregir lo que dije antes.</strong> Descarté este
+          apartamento por estar ocupado, sin medir cuánto cuesta eso. La propia
+          ANV publica el dato en sus preguntas frecuentes: el proceso judicial
+          para recuperar el inmueble dura <strong>entre seis y diez meses</strong>.
+        </p>
+        <p>
+          Con ese número el costo se puede calcular en vez de suponerlo — y
+          medido en retorno anualizado, <strong>este negocio es competitivo</strong>.
+          En su escenario central rinde más que el de La Unión. Lo que lo deja
+          segundo no es la rentabilidad, es la forma del riesgo. Está detallado
+          más abajo.
+        </p>
+      </div>
+
+      <p class="nota">
+        Se puede financiar hasta UR 2.151,75 en unidades indexadas, pero solo si el
+        comprador califica como sujeto de crédito de la ANV. Gastos de remate:
+        $27.179. Remata en la oficina de la ANV en Maldonado, Solís y Bergalli.
+      </p>
+    </article>
+
+    <!-- ============ 3 ============ -->
+    <article class="ficha">
+      <div class="ficha-cab">
+        <div class="puesto"><span class="n">3</span> <span>Lo más barato de la lista</span></div>
+        <h3>Apartamento en Juan de Dios Curbelo 970</h3>
+        <p class="sub">
+          Unidad 001 · Padrón 734/001 · 73,69 m², 3 dormitorios ·
+          San Carlos, Maldonado
+        </p>
+        <div class="chips">
+          <span class="chip">Miércoles 5 de agosto, 13:00</span>
+          <span class="chip">Base USD 23.217</span>
+          <span class="chip mal">Ocupado</span>
+          <span class="chip mal">Sin mercado comparable</span>
+        </div>
+      </div>
+
+      <dl class="cifras">
+        <div class="cifra">
+          <dt>Compra total</dt>
+          <dd class="destacada">25.570</dd>
+        </div>
+        <div class="cifra">
+          <dt>Tasación de la ANV</dt>
+          <dd>56.814</dd>
+        </div>
+        <div class="cifra">
+          <dt>Queda para reformar</dt>
+          <dd>49.430</dd>
+        </div>
+        <div class="cifra">
+          <dt>En venta en la ciudad</dt>
+          <dd>11 <small>casas</small></dd>
+        </div>
+      </dl>
+
+      <p>
+        Entra por menos de la mitad del presupuesto y deja casi 50.000 libres. Pero
+        también está ocupado, y San Carlos tiene once propiedades en venta en toda
+        la ciudad: cero apartamentos comparables dentro de 3 km. Un margen que no
+        se puede realizar no es un margen. Lo dejo en la lista porque el precio de
+        entrada es genuinamente bajo, no porque lo recomiende.
+      </p>
+    </article>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ descartados ============ -->
+  <section>
+    <h2>Por qué el resto queda afuera</h2>
+
+    <p>
+      Los otros nueve remates de la ANV entran holgadamente en presupuesto —
+      varios por menos de 40.000 dólares — y todos se compran muy por debajo del
+      mercado local. El problema es doble y es el mismo en todos.
+    </p>
+
+    <div class="tabla-scroll">
+      <table>
+        <caption>
+          Compra total incluye base, gastos de remate, comisión, escritura e ITP.
+          «En venta» es la cantidad de casas publicadas en toda esa ciudad.
+        </caption>
+        <thead>
+          <tr>
+            <th>Ciudad</th>
+            <th>Fecha</th>
+            <th class="num">Compra</th>
+            <th class="num">Tasación ANV</th>
+            <th class="num">En venta</th>
+            <th>Ocupación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paysandú</td><td>5 ago</td>
+            <td class="num">24.929</td><td class="num">52.602</td>
+            <td class="num">47</td><td class="marca">Ocupado</td>
+          </tr>
+          <tr>
+            <td>Minas — Centro</td><td>7 ago</td>
+            <td class="num">26.030</td><td class="num">56.527</td>
+            <td class="num">11</td><td class="tenue">Se desconoce</td>
+          </tr>
+          <tr>
+            <td>Mercedes</td><td>5 ago</td>
+            <td class="num">29.650</td><td class="num">56.144</td>
+            <td class="num">10</td><td class="marca">Ocupado</td>
+          </tr>
+          <tr>
+            <td>Minas — España</td><td>6 ago</td>
+            <td class="num">34.062</td><td class="num">62.271</td>
+            <td class="num">11</td><td class="tenue">Se desconoce</td>
+          </tr>
+          <tr>
+            <td>Melo</td><td>5 ago</td>
+            <td class="num">38.577</td><td class="num">70.647</td>
+            <td class="num">7</td><td class="tenue">Se desconoce</td>
+          </tr>
+          <tr>
+            <td>Florida</td><td>5 ago</td>
+            <td class="num">39.401</td><td class="num">77.390</td>
+            <td class="num">52</td><td class="tenue">Se desconoce</td>
+          </tr>
+          <tr>
+            <td>Minas — Otegui</td><td>5 ago</td>
+            <td class="num">48.482</td><td class="num">89.122</td>
+            <td class="num">11</td><td class="tenue">Se desconoce</td>
+          </tr>
+          <tr>
+            <td>Pando</td><td>5 ago</td>
+            <td class="num">50.465</td><td class="num">108.346</td>
+            <td class="num">31</td><td class="tenue">Se desconoce</td>
+          </tr>
+          <tr>
+            <td>Rocha</td><td>5 ago</td>
+            <td class="num">61.747</td><td class="num">171.639</td>
+            <td class="num">12</td><td class="marca">Ocupado</td>
+          </tr>
+          <tr>
+            <td>Ciudad del Plata</td><td>6 ago</td>
+            <td class="num">17.370</td><td class="num tenue">—</td>
+            <td class="num">5</td><td class="marca">Ocupado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>Ninguno está desocupado.</strong> Seis edictos dicen textualmente
+      «el bien se encuentra ocupado» y los otros seis, «se desconoce el estado
+      ocupacional». En los doce aparece la misma cláusula: la ANV tramitará la
+      entrega libre de ocupantes, pero eso no suspende la obligación de pagar todo
+      y escriturar. Es la norma de la cartera hipotecaria del Banco Hipotecario,
+      no la excepción.
+    </p>
+
+    <p>
+      <strong>Y casi ninguno tiene dónde revenderse.</strong> Melo tiene siete
+      casas publicadas en toda la ciudad; Ciudad del Plata, cinco; Mercedes, diez;
+      Minas y San Carlos, once. Comprar al 40% del valor en una plaza así no es un
+      descuento, es el precio real de un activo que tarda mucho en venderse.
+      Montevideo y Maldonado son las dos únicas plazas de esta tanda con
+      profundidad de mercado.
+    </p>
+
+    <h3>Fuera del alcance por otros motivos</h3>
+    <div class="tabla-scroll">
+      <table>
+        <thead>
+          <tr><th>Remate</th><th>Fecha</th><th>Motivo</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pocitos — Luis Franzini y Carlos Berg</td><td>12 ago</td>
+            <td>Edificio de 10 pisos en obra, 11 apartamentos. Otra escala.</td>
+          </tr>
+          <tr>
+            <td>Punta del Este — Edificio Cuatro Mares</td><td>12 ago</td>
+            <td>Se remata el 50% indiviso del padrón, no la unidad entera.</td>
+          </tr>
+          <tr>
+            <td>Reducto — local en Avda. Millán 2389</td><td>14 ago</td>
+            <td>Local comercial de 261 m²: reventa mucho más lenta que vivienda.</td>
+          </tr>
+          <tr>
+            <td>San Carlos — 18 de Julio 744</td><td>5 ago</td>
+            <td>Sin base y sin un solo comparable a 3 km: imposible fijar un tope.</td>
+          </tr>
+          <tr>
+            <td>Empalme Olmos — Callejón 25 de Agosto</td><td>11 ago</td>
+            <td>Casa de 174 m² sin base, pero ocupada por sus propietarios.</td>
+          </tr>
+          <tr>
+            <td>Carmelo, Colonia, Flores, Salto, Playa Pascual</td><td>6–18 ago</td>
+            <td>Terrenos, chacras y campos. No es el caso.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ anualizado ============ -->
+  <section>
+    <h2>Por qué ① le gana a ②, y no es por rentabilidad</h2>
+
+    <p>
+      Un margen del 50% no le gana a uno del 25% si tarda el doble en cobrarse.
+      El de Montevideo se escritura, se reforma y se vende en unos ocho meses.
+      El de Maldonado arranca con seis a diez meses de proceso judicial en los
+      que el dinero ya está puesto, los tributos corren y no se puede ni entrar.
+      Puestos en la misma escala:
+    </p>
+
+    <div class="tabla-scroll">
+      <table>
+        <caption>
+          Todo incluido: comisión del rematador, escritura, ITP, tributos de la
+          espera, reforma y 5% de costos al vender.
+        </caption>
+        <thead>
+          <tr>
+            <th>Escenario</th><th class="num">Invertido</th><th class="num">Margen</th>
+            <th class="num">Meses</th><th class="num">Anual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>① sin competencia — se compra a 40.000</td>
+            <td class="num">57.464</td><td class="num">25.186</td>
+            <td class="num">8</td><td class="num"><strong>72%</strong></td>
+          </tr>
+          <tr>
+            <td>② desalojo optimista — 6 meses</td>
+            <td class="num">70.896</td><td class="num">35.900</td>
+            <td class="num">13</td><td class="num"><strong>46%</strong></td>
+          </tr>
+          <tr>
+            <td>① en el tope disciplinado — 48.000</td>
+            <td class="num">66.157</td><td class="num">16.493</td>
+            <td class="num">8</td><td class="num"><strong>40%</strong></td>
+          </tr>
+          <tr>
+            <td>① en el precio típico de remate — 50.460</td>
+            <td class="num">68.830</td><td class="num">13.820</td>
+            <td class="num">8</td><td class="num"><strong>32%</strong></td>
+          </tr>
+          <tr>
+            <td>② desalojo pesimista — 10 meses</td>
+            <td class="num">71.496</td><td class="num">35.300</td>
+            <td class="num">19</td><td class="num"><strong>29%</strong></td>
+          </tr>
+          <tr>
+            <td>② si además la reforma se va a 20.000</td>
+            <td class="num">77.496</td><td class="num">29.300</td>
+            <td class="num">19</td><td class="num marca"><strong>22%</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>En su mejor escenario, Maldonado le gana.</strong> Eso contradice
+      lo que dije al principio y hay que decirlo. La diferencia está en la forma
+      de la distribución, no en el promedio:
+    </p>
+
+    <div class="argumentos">
+      <div class="arg favor">
+        <div class="arg-titulo">① va de 32% a 72%</div>
+        <ul>
+          <li><strong>No tiene base.</strong> Si la puja sube, uno se levanta y
+            se va sin haber perdido un peso. Esa opción de salida es gratis y
+            vale mucho.</li>
+          <li>Se puede visitar antes y hay 33 días para estudiar el expediente.</li>
+          <li>El escenario bueno —comprar sin competencia— depende de algo que
+            pasa seguido en remates de barrio.</li>
+        </ul>
+      </div>
+      <div class="arg contra">
+        <div class="arg-titulo">② va de 22% a 46%</div>
+        <ul>
+          <li><strong>Tiene base fija.</strong> O se pagan 51.594 o no se juega:
+            no existe el escenario de comprar barato.</li>
+          <li><strong>Remata en seis días.</strong> No alcanza para leer el
+            expediente ni para pedir la deuda de gastos comunes.</li>
+          <li>No se puede ver por dentro, y un inmueble entregado tras un
+            desalojo rara vez está entero: ahí se va el escenario de 22%.</li>
+          <li>Los seis a diez meses son un promedio estadístico, no una
+            garantía.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>
+      Dicho de otro modo: <strong>① tiene mejor techo y mejor piso</strong>, y
+      además permite arrepentirse. Pero si alguien tiene tolerancia a esperar un
+      año y medio y el capital quieto no le duele, ② es un negocio legítimo — no
+      el descarte que sugerí en la primera versión de este informe.
+    </p>
+
+    <p class="nota">
+      Hay una jugada que no cuesta nada: los dos remates son secuenciales. Ir al
+      de Maldonado el 6 de agosto a ver cómo se paga, sin obligación de pujar, y
+      quedarse igual con el de Montevideo del 2 de setiembre. Perder el primero
+      no cierra la puerta del segundo.
+    </p>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ calibración ============ -->
+  <section>
+    <h2>A cuánto se rematan de verdad</h2>
+
+    <p>
+      Todo consejo sobre un remate sin base descansa en adivinar cuánto se va a
+      pagar en la sala. Ese número ahora está medido: la Asociación de
+      Rematadores deja publicado el precio de martillo <em>después</em> del
+      remate. Cruzando cada uno contra los avisos de venta de su misma cuadra:
+    </p>
+
+    <div class="tabla-scroll">
+      <table>
+        <caption>
+          «Vale» es la mediana del precio total de apartamentos equivalentes a
+          menos de 800 metros. Precios de martillo publicados por la ANRTCI.
+        </caption>
+        <thead>
+          <tr>
+            <th>Fecha</th><th>Zona</th><th class="num">m²</th>
+            <th class="num">Se remató en</th><th class="num">Vale</th>
+            <th class="num">Ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>25 mar</td><td>Buceo</td><td class="num">61,0</td>
+            <td class="num">121.000</td><td class="num">151.750</td><td class="num">80%</td></tr>
+          <tr><td>10 abr</td><td>Malvín Norte</td><td class="num">55,0</td>
+            <td class="num">48.000</td><td class="num">70.000</td><td class="num">69%</td></tr>
+          <tr><td>27 may</td><td>Pocitos</td><td class="num">35,0</td>
+            <td class="num">92.109</td><td class="num">121.500</td><td class="num">76%</td></tr>
+          <tr><td>21 may</td><td>Cordón</td><td class="num">42,5</td>
+            <td class="num">42.700</td><td class="num">89.950</td><td class="num">47%</td></tr>
+          <tr><td>27 may</td><td>Unión</td><td class="num">44,0</td>
+            <td class="num">46.500</td><td class="num">100.000</td><td class="num">46%</td></tr>
+          <tr><td>14 may</td><td>Ciudad Vieja</td><td class="num">61,9</td>
+            <td class="num">27.384</td><td class="num">100.500</td><td class="num marca">27%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>La mediana es 58%.</strong> Un apartamento en remate judicial se
+      adjudica, típicamente, por poco más de la mitad de lo que vale en el
+      mercado. Eso confirma que el descuento del remate es real — y que el BHU,
+      vendiendo a precio de mercado, no compite.
+    </p>
+
+    <p>
+      Pero la dispersión es enorme: del 27% al 80%. El caso más barato es un
+      apartamento de Ciudad Vieja que da a un pozo de aire y luz, sin vista;
+      los más caros son Buceo y Pocitos, donde siempre hay competencia. La
+      lección es que <strong>el precio lo decide quién aparezca ese día</strong>,
+      y por eso el tope escrito importa más que el pronóstico.
+    </p>
+
+    <p class="nota">
+      Dos correcciones de método antes de creerle a esta tabla: la primera
+      versión daba ratios del 35%, imposibles, porque comparaba contra un radio
+      de 1,2 km — desde Comercio y Avenida Italia eso alcanza Parque Batlle y
+      duplica la mediana de la cuadra. Y porque multiplicaba el USD/m² mediano
+      por la superficie, cuando los apartamentos chicos se venden mucho más caros
+      por metro. Ahora el radio es de 800 metros y se compara precio total contra
+      precio total.
+    </p>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ mercado abierto ============ -->
+  <section>
+    <h2>¿Y si en vez de rematar se compra normal?</h2>
+
+    <p>
+      Es la pregunta obvia y merecía respuesta con números. Comprar un aviso
+      común no tiene comisión de martillero, ni competencia, ni riesgo de
+      ocupante: se visita, se negocia y se escritura. Se rastrearon los 3.106
+      avisos relevados buscando los que estuvieran al menos 25% por debajo de
+      sus vecinos inmediatos, y se abrió la ficha completa de cada finalista.
+    </p>
+
+    <div class="veredicto" style="border-left-color: var(--alerta);">
+      <p>
+        <strong>Casi todos los descuentos grandes resultaron falsos.</strong> El
+        caso que lo explica todo: un apartamento en Aguada, 2 dormitorios,
+        séptimo piso con ascensor, «excelente estado», a
+        <strong>USD 48.500</strong> en una zona que vale 115.000. Parecía la
+        oportunidad del año.
+      </p>
+      <p>
+        La ficha completa aclara: <strong>«Cuota ANV: $16.433 mensuales (restan
+        aproximadamente 13 años)»</strong>. Son unos 64.000 dólares de deuda
+        hipotecaria que hereda el comprador. El precio real es 112.300 contra
+        una zona de 115.000. No había descuento: había un pasivo escondido
+        abajo del aviso.
+      </p>
+    </div>
+
+    <p>
+      Descontados los que arrastran deuda, los que suman la azotea a los metros
+      edificados y los que venden derechos sucesorios en vez del inmueble,
+      quedan tres compras reales. Ninguna le gana al remate:
+    </p>
+
+    <div class="tabla-scroll">
+      <table>
+        <caption>
+          Retorno anualizado, mismos supuestos que la tabla anterior. Comprando
+          normal no hay comisión de rematador, sólo escritura e ITP.
+        </caption>
+        <thead>
+          <tr>
+            <th>Vía</th><th class="num">Compra</th><th class="num">Vale</th>
+            <th class="num">Margen</th><th class="num">Anual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>① <strong>Remate</strong> — La Unión, sin competencia</td>
+            <td class="num">40.000</td><td class="num">87.000</td>
+            <td class="num">25.186</td><td class="num"><strong>72%</strong></td>
+          </tr>
+          <tr>
+            <td>① <strong>Remate</strong> — La Unión, en el tope</td>
+            <td class="num">48.000</td><td class="num">87.000</td>
+            <td class="num">16.493</td><td class="num"><strong>40%</strong></td>
+          </tr>
+          <tr>
+            <td>③ Compra normal — Chayos, Maroñas, a reciclar</td>
+            <td class="num">30.000</td><td class="num">69.500</td>
+            <td class="num">12.525</td><td class="num">37%</td>
+          </tr>
+          <tr>
+            <td>③ Compra normal — Malvín Norte, Euskalerria</td>
+            <td class="num">45.500</td><td class="num">70.900</td>
+            <td class="num">5.580</td><td class="num tenue">14%</td>
+          </tr>
+          <tr>
+            <td>③ Compra normal — La Unión, 50 m², sin gastos comunes</td>
+            <td class="num">44.000</td><td class="num">66.000</td>
+            <td class="num">2.500</td><td class="num tenue">6%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      La mejor compra del mercado abierto —un apartamento «para reciclar
+      totalmente» en Maroñas, con acceso por corredor— rinde <strong>37%</strong>,
+      apenas por debajo del remate en su tope, y con una reventa mucho más
+      difícil. Las otras dos ni siquiera pagan el trabajo.
+    </p>
+
+    <p>
+      <strong>Y hay una razón estructural por la que esto va a seguir siendo
+      así:</strong> el mercado abierto descuenta entre 25% y 35%, porque el que
+      vende puede esperar. El remate descuenta 42%, porque el que vende no
+      elige. Ese diferencial es todo el negocio.
+    </p>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ BHU ============ -->
+  <section>
+    <h2>El otro camino sin remate, y por qué tampoco conviene</h2>
+
+    <p>
+      El Banco Hipotecario vende directamente los inmuebles que ya recuperó, a
+      precio fijo publicado y con visita coordinable por WhatsApp. Sobre el papel
+      resuelve de un saque los dos problemas del remate: no hay que competir a
+      ciegas ni heredar un ocupante. Se revisó todo su stock.
+    </p>
+
+    <div class="tabla-scroll">
+      <table>
+        <caption>
+          Margen calculado con 15.000 de reforma, contra casas comparables de la
+          misma ciudad. Sin comisión de rematador: solo escritura e ITP.
+        </caption>
+        <thead>
+          <tr>
+            <th>Inmueble</th><th class="num">m²</th><th class="num">Precio</th>
+            <th class="num">Margen</th><th>Problema</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rocha — República Española 332</td><td class="num">118</td>
+            <td class="num">47.000</td><td class="num">6.900 <span class="tenue">(11%)</span></td>
+            <td>Único sin obras irregulares, pero 12 casas en venta en la ciudad</td>
+          </tr>
+          <tr>
+            <td>Pando — Teresa Gaitán</td><td class="num">58</td>
+            <td class="num">81.000</td><td class="num marca">−53.975</td>
+            <td>Piden 81.000 donde el mercado comparable está en 48.500</td>
+          </tr>
+          <tr>
+            <td>Carmelo — 25 de Agosto</td><td class="num">86</td>
+            <td class="num">70.000</td><td class="num tenue">—</td>
+            <td>Obras a regularizar; ya supera el presupuesto de compra</td>
+          </tr>
+          <tr>
+            <td>Biarritz, Maldonado</td><td class="num">62</td>
+            <td class="num">105.000</td><td class="num tenue">—</td>
+            <td>Sólo promesa, obras irregulares</td>
+          </tr>
+          <tr>
+            <td>El Pinar — Giannattasio</td><td class="num">61</td>
+            <td class="num">165.000</td><td class="num tenue">—</td>
+            <td>Obras irregulares; fuera de presupuesto</td>
+          </tr>
+          <tr>
+            <td>Palermo — Ejido 963</td><td class="num">136</td>
+            <td class="num">165.000</td><td class="num tenue">—</td>
+            <td>Reciclado y sin observaciones, pero al triple del presupuesto</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>El BHU no vende barato.</strong> Vende a precio de mercado, y en
+      Pando por encima. La comodidad de comprar sin competir se paga exactamente
+      con el descuento que uno venía a buscar. Y hay una trampa que se repite en
+      casi todo el stock accesible: <strong>«presenta obras irregulares»</strong>
+      — el inmueble no se puede escriturar hasta regularizarlo ante la
+      Intendencia, así que se firma una promesa y se asume un trámite de plazo y
+      costo desconocidos.
+    </p>
+
+    <p class="nota">
+      Vale seguirlo igual: el BHU rota su stock todos los meses y publica lo que
+      ya vendió. En la lista de señadas aparecen un apartamento de 110 m² en La
+      Unión a 60.000 y uno de 46 m² en Nuevo París a 25.500. A esos precios el
+      negocio sí existiría — la cuestión es estar mirando el mes que salgan.
+    </p>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ qué hacer ============ -->
+  <section>
+    <h2>Qué hacer en las próximas semanas</h2>
+
+    <ol class="pasos">
+      <li>
+        <strong>Llamar a Daniel Blanco al 099537163</strong> y agendar la visita al
+        apartamento para después del 10 de agosto. Es lo único que ninguno de los
+        otros remates permite.
+      </li>
+      <li>
+        <strong>Pedirle a la administración del edificio la deuda de gastos
+        comunes</strong> del padrón 63.417/202. La hereda el comprador y no figura
+        en ningún número de este informe. Puede ser de miles de dólares.
+      </li>
+      <li>
+        <strong>Que un escribano estudie el expediente</strong> en el Juzgado
+        Letrado Civil de 1º Turno (Pasaje de los Derechos Humanos 1309, piso 3),
+        con foco en la partición parcial de 2012 que quedó sin inscribir.
+      </li>
+      <li>
+        <strong>Ir con un tope escrito de 48.000 y no moverse.</strong> El precio
+        típico de adjudicación (50.460) queda apenas por encima, así que hay que
+        contar con perderlo. Está bien perderlo: no tiene base, retirarse no
+        cuesta nada, y a 62.000 el negocio directamente no cierra.
+      </li>
+      <li>
+        <strong>Ir igual al de Maldonado el 6 de agosto, sin obligación de
+        pujar.</strong> Sirve para ver cómo se paga de verdad en una sala y no
+        cierra ninguna puerta: el de Montevideo es casi un mes después.
+      </li>
+      <li>
+        <strong>Volver a mirar a mediados de agosto.</strong> Los edictos de
+        setiembre se publican recién entonces, y la nómina de la ANV de Montevideo
+        de fin de agosto tampoco salió todavía. Son dos ventanas que hoy están
+        cerradas y que en dos semanas van a tener contenido.
+      </li>
+      <li>
+        <strong>Seguir el stock del BHU mes a mes.</strong> Hoy no tiene nada que
+        sirva, pero rota el inventario y su lista de vendidas muestra que a veces
+        publica a 25.000 o 60.000. Ahí se compra sin competir y con visita previa.
+      </li>
+      <li>
+        <strong>Eso último ya está automatizado.</strong> Queda una tarea
+        programada corriendo cada tres días sobre las cinco fuentes vivas —ANV,
+        rematadores.com, la Asociación de Rematadores, el Diario Oficial y el
+        BHU— que compara contra la foto de hoy y avisa únicamente cuando aparece
+        algo que no estaba.
+      </li>
+    </ol>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ cobertura ============ -->
+  <section>
+    <h2>Qué tan completa es esta búsqueda</h2>
+
+    <p>
+      Se rastrearon todas las fuentes de remates que existen en el país y se
+      verificó una por una que no estuvieran escondiendo avisos detrás de una
+      paginación o un filtro de fecha.
+    </p>
+
+    <div class="tabla-scroll">
+      <table>
+        <thead>
+          <tr><th>Fuente</th><th class="num">Avisos</th><th>Estado</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diario Oficial (IMPO)</td><td class="num">38</td>
+            <td>Completa — 38 anclas, 38 bloques. Publicación obligatoria por ley
+              para todo remate judicial, pero <strong>sólo muestra 15 días</strong></td>
+          </tr>
+          <tr>
+            <td>rematadores.com</td><td class="num">37</td>
+            <td>Completa — la más profunda en fechas lejanas; es la única que ya
+              lista el remate del 2 de setiembre</td>
+          </tr>
+          <tr>
+            <td>Agencia Nacional de Vivienda</td><td class="num">25</td>
+            <td>Nóminas y edictos en PDF de julio y agosto</td>
+          </tr>
+          <tr>
+            <td>Asociación de Rematadores</td><td class="num">10</td>
+            <td>Converge, sin aportar remates nuevos. Aporta el padrón y los
+              precios de martillo históricos</td>
+          </tr>
+          <tr>
+            <td>Banco Hipotecario</td><td class="num">7</td>
+            <td>Venta directa por la base. Fuente real pero sin descuento</td>
+          </tr>
+          <tr>
+            <td>Assad Remates</td><td class="num">2</td>
+            <td>Ambos ya cubiertos; su aviso completo no se veía desde
+              rematadores.com, que sólo publica su banner</td>
+          </tr>
+          <tr>
+            <td>Cartelera de la Intendencia</td><td class="num tenue">0</td>
+            <td class="tenue">Archivo muerto: nada posterior a 2023</td>
+          </tr>
+          <tr>
+            <td>Remate Mauad</td><td class="num tenue">0</td>
+            <td class="tenue">Sin inmuebles agendados</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>Hay un límite que ninguna búsqueda puede saltar:</strong> los
+      edictos judiciales se publican con dos o tres semanas de anticipación, así
+      que <em>hoy todavía no existe</em> la lista de lo que se remata en
+      setiembre. El del 2 de setiembre aparece porque su rematador lo publicó
+      temprano. Entre mediados y fines de agosto van a aparecer varios más, y esa
+      es la razón de fondo para dejar el chequeo corriendo en vez de decidir todo
+      ahora.
+    </p>
+  </section>
+
+  <hr class="regla-fina">
+
+  <!-- ============ método ============ -->
+  <section>
+    <h2>Cómo se calculó y qué no cubre</h2>
+
+    <p class="nota">
+      Se relevaron las nóminas y edictos de la ANV, los avisos de remate del Diario
+      Oficial (IMPO), las 37 fichas publicadas en rematadores.com, la agenda y el
+      histórico de la Asociación de Rematadores, el stock del BHU y 2.908 avisos de
+      venta reales de InfoCasas en Montevideo y once ciudades del interior. Cada
+      padrón se geolocalizó y los comparables se eligen por distancia física, nunca
+      por nombre de barrio: este mismo remate se publica como «La Unión» y cae en
+      Villa Española, a un kilómetro y en otra franja de precio.
+    </p>
+
+    <p class="nota">
+      Los comparables se restringen a apartamentos usados de entre 50 y 84 m², sin
+      obra nueva ni ventas con inquilino. Cotizaciones usadas: dólar a $40,17 y
+      Unidad Reajustable a $1.922,68, la declarada en los edictos de julio de 2026.
+    </p>
+
+    <p class="nota">
+      <strong>Lo que estos números no incluyen:</strong> la deuda de gastos comunes
+      de cualquiera de las propiedades, el estado interior de todas salvo lo que se
+      ve en las fotos del edificio, y el costo y el plazo de un eventual desalojo en
+      los casos de la ANV. La reforma se estima en USD 14.000 a valores de plaza,
+      sin haber visto ninguna cocina ni ningún baño por dentro.
+    </p>
+
+    <div class="pie">
+      <p class="nota">
+        El informe anterior, sobre los remates del 29 al 31 de julio que ya
+        pasaron, sigue disponible en
+        <a href="anterior.html">este enlace</a>.
+      </p>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
