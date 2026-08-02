@@ -393,36 +393,6 @@
   .marca { color: var(--alerta); font-weight: 600; }
   .tenue { color: var(--tinta-3); }
 
-  /* ---- sensibilidad ---- */
-
-  .rango {
-    display: flex;
-    flex-direction: column;
-    gap: .55rem;
-  }
-  .barra-fila {
-    display: grid;
-    grid-template-columns: 5.5rem 1fr 5.5rem;
-    align-items: center;
-    gap: .75rem;
-    font-family: var(--mono);
-    font-variant-numeric: tabular-nums;
-    font-size: .85rem;
-  }
-  .barra-pista {
-    height: 1.5rem;
-    background: var(--papel-2);
-    border: 1px solid var(--linea);
-    position: relative;
-  }
-  .barra-relleno {
-    position: absolute;
-    inset: 0 auto 0 0;
-    background: var(--cota);
-    opacity: .22;
-    border-right: 2px solid var(--cota);
-  }
-  .barra-fila .tope { text-align: right; font-weight: 600; color: var(--cota); }
 
   /* ---- pasos ---- */
 
@@ -469,7 +439,6 @@
     body { font-size: 16px; }
     .hoja { padding: 2.5rem 1.1rem 4rem; gap: 2.4rem; }
     .ficha { padding: 1.1rem; }
-    .barra-fila { grid-template-columns: 4.6rem 1fr 4.6rem; gap: .5rem; font-size: .78rem; }
   }
 </style>
 
@@ -561,46 +530,6 @@
     </ol>
   </div>
 
-  <div class="veredicto">
-    <h2 style="font-size:1.35rem; margin-bottom:.2rem;">Lo que cambió desde el informe anterior</h2>
-    <p>
-      Se volvieron a revisar las siete fuentes de remates que existen en el país
-      y <strong>la conclusión de fondo no cambió</strong>: el apartamento de 8 de
-      Octubre y Vera sigue siendo el que mejor cierra, con el de Maldonado
-      segundo. Lo que cambió es que ahora hay números medidos donde antes había
-      supuestos.
-    </p>
-    <p>
-      Los once de la Agencia Nacional de Vivienda que entran por precio comparten
-      dos problemas que el precio no compensa: <strong>ninguno está
-      desocupado</strong> y casi todos están en ciudades donde hay menos de
-      quince propiedades en venta en total. El BHU, que vende sin puja y con
-      visita, <strong>no vende barato</strong>: sus precios están a mercado o por
-      encima.
-    </p>
-    <p>
-      Midiendo los precios de martillo que publica la Asociación de Rematadores,
-      <strong>un apartamento en remate se adjudica a la mitad de lo que se pide
-      por uno equivalente</strong> — mediana del 58%, con casos entre 27% y 80%.
-    </p>
-    <p>
-      Y una corrección al informe anterior: descartar el apartamento de Maldonado
-      por estar ocupado era demasiado simple. La ANV publica que el desalojo tarda
-      de seis a diez meses, así que ese costo se puede calcular en vez de
-      suponerlo. Calculado —abogado y escribano se llevan alrededor del 10% de lo
-      que se pagó— <strong>el de Maldonado queda segundo también en
-      rentabilidad</strong>: 28% anual en su mejor escenario contra 31% del de
-      Montevideo comprado a 48.000. Deja de ser un descarte por prejuicio y pasa
-      a ser un segundo puesto medido, que es distinto.
-    </p>
-    <p>
-      Y se probó la alternativa obvia —comprar un aviso común, sin remate—
-      revisando 3.106 avisos: <strong>ninguna compra del mercado abierto le gana
-      al remate</strong>, y los descuentos más llamativos resultaron ser deuda
-      hipotecaria escondida.
-    </p>
-  </div>
-
   <!-- ============ 1 ============ -->
   <section>
     <h2>Las dos opciones que quedan en pie</h2>
@@ -652,64 +581,48 @@
       </p>
 
       <p>
-        Al no tener base, el precio lo pone la sala. El número que importa es
-        hasta dónde conviene pujar, y eso depende de a cuánto se logre revender:
+        Al no tener base, el precio lo pone la sala. Lo que se gana depende
+        enteramente de cuánto se termine pagando:
       </p>
 
-      <div class="rango" role="img" aria-label="Precio de compra que deja un 25% limpio con todos los costos descontados, según a cuánto se logre revender: vendiendo a 75.000 ese precio es 36.877; a 80.000 es 40.257; a 85.000 es 43.637; a 90.000 es 47.017; a 95.000 es 50.397.">
-        <div class="barra-fila">
-          <span class="tenue">vende a</span>
-          <span class="tenue" style="font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;">25% pagando</span>
-          <span></span>
-        </div>
-        <div class="barra-fila">
-          <span>75.000</span>
-          <span class="barra-pista"><span class="barra-relleno" style="width:74%"></span></span>
-          <span class="tope">36.877</span>
-        </div>
-        <div class="barra-fila">
-          <span>80.000</span>
-          <span class="barra-pista"><span class="barra-relleno" style="width:80%"></span></span>
-          <span class="tope">40.257</span>
-        </div>
-        <div class="barra-fila">
-          <span>85.000</span>
-          <span class="barra-pista"><span class="barra-relleno" style="width:87%"></span></span>
-          <span class="tope">43.637</span>
-        </div>
-        <div class="barra-fila">
-          <span>90.000</span>
-          <span class="barra-pista"><span class="barra-relleno" style="width:94%"></span></span>
-          <span class="tope">47.017</span>
-        </div>
-        <div class="barra-fila">
-          <span>95.000</span>
-          <span class="barra-pista"><span class="barra-relleno" style="width:100%"></span></span>
-          <span class="tope">50.397</span>
-        </div>
+      <div class="tabla-scroll">
+        <table>
+          <caption>
+            Con la reventa estimada en 87.000 y 14.000 de reforma. Todo
+            descontado: comisión, escritura, ITP, gastos de los ocho meses,
+            costos de venta e IRPF.
+          </caption>
+          <thead>
+            <tr>
+              <th class="num">Si se paga</th><th class="num">Queda limpio</th>
+              <th class="num">Sobre lo puesto</th><th class="num">Anual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">40.000</td><td class="num">20.722</td>
+              <td class="num">35%</td><td class="num"><strong>58%</strong></td></tr>
+            <tr><td class="num">44.000</td><td class="num">16.897</td>
+              <td class="num">27%</td><td class="num"><strong>43%</strong></td></tr>
+            <tr><td class="num">48.000</td><td class="num">13.072</td>
+              <td class="num">19%</td><td class="num"><strong>31%</strong></td></tr>
+            <tr><td class="num">50.460</td><td class="num">10.720</td>
+              <td class="num">15%</td><td class="num"><strong>24%</strong></td></tr>
+            <tr><td class="num">52.000</td><td class="num">9.247</td>
+              <td class="num">13%</td><td class="num">20%</td></tr>
+            <tr><td class="num">54.000</td><td class="num">7.335</td>
+              <td class="num">10%</td><td class="num marca">15%</td></tr>
+          </tbody>
+        </table>
       </div>
 
       <p class="nota">
-        Cada cifra es el precio de compra al que quedaría un 25% limpio, con
-        <em>todo</em> descontado: comisión del rematador, escritura, ITP, los
-        14.000 de reforma, los gastos de los ocho meses, el 5% de vender y el
-        IRPF. Con la reventa estimada en 87.000 —la fila entre 85.000 y 90.000—
-        ese punto cae cerca de 45.000. Pagando más el negocio no desaparece, se
-        achica: <strong>a 48.000 se gana 19%; a 50.460, 15%; a 52.000, 13%; a
-        54.000, 10%.</strong>
-      </p>
-
-      <p class="nota">
-        Para apretar esa estimación se relevaron 302 avisos más de los barrios
-        que rodean la esquina, porque apoyar una decisión de este tamaño en
-        cinco comparables era poco. Con la muestra completa la estimación se
-        estabiliza: <strong>87.000</strong> con 10 comparables a menos de 800
-        metros y <strong>90.000</strong> con 35 a menos de 1,5 km. Una lectura
-        intermedia de 78.000 salía de una muestra de cinco avisos y no se
-        sostuvo. Sigue siendo una estimación por comparación, hecha desde
-        afuera: <strong>de este apartamento en particular no se sabe en qué
-        estado está por dentro</strong>, y eso puede mover el número para
-        cualquiera de los dos lados.
+        Para apretar la estimación de reventa se relevaron 302 avisos de los
+        barrios que rodean la esquina: da <strong>87.000</strong> con 10
+        comparables a menos de 800 metros y 90.000 con 35 a menos de 1,5 km.
+        Sigue siendo una estimación por comparación, hecha desde afuera:
+        <strong>de este apartamento no se sabe en qué estado está por
+        dentro</strong>, y eso puede mover el número para cualquiera de los dos
+        lados.
       </p>
 
       <div class="veredicto" style="border-left-color: var(--alerta);">
@@ -735,11 +648,6 @@
           número más sensible del informe. Sale de lo que piden los avisos de la
           zona, no de operaciones cerradas. Si termina vendiéndose a 82.000, el
           15% del escenario esperado pasa a 9%.
-        </p>
-        <p class="nota" style="margin:0">
-          Lo bueno de que no tenga base: si la puja sube, uno se levanta y se va
-          sin haber perdido nada. Esa opción de salida vale más de lo que parece
-          — el candidato ② no la tiene.
         </p>
       </div>
 
@@ -887,13 +795,10 @@
 
       <div class="veredicto" style="border-left-color: var(--alerta);">
         <p>
-          <strong>Tengo que corregir lo que dije antes.</strong> Descarté este
-          apartamento por estar ocupado, sin medir cuánto cuesta eso. La propia
-          ANV publica el dato en sus preguntas frecuentes: el proceso judicial
-          para recuperar el inmueble dura <strong>entre seis y diez meses</strong>.
-        </p>
-        <p>
-          Con ese número el costo se puede calcular en vez de suponerlo: el
+          <strong>Estar ocupado tiene un costo que se puede calcular, no hay que
+          suponerlo.</strong> La propia ANV publica el dato en sus preguntas
+          frecuentes: el proceso judicial para recuperar el inmueble dura
+          <strong>entre seis y diez meses</strong>. Puesto en números: el
           abogado del desalojo y el escribano que constata en qué estado quedó
           el inmueble se llevan alrededor del <strong>10% de lo que se
           pagó</strong>, unos 5.500 dólares acá. Sumado eso,
@@ -1177,9 +1082,8 @@
       <div class="arg favor">
         <div class="arg-titulo">① va de 24% a 58%</div>
         <ul>
-          <li><strong>No tiene base.</strong> Si la puja sube, uno se levanta y
-            se va sin haber perdido un peso. Esa opción de salida es gratis y
-            vale mucho.</li>
+          <li><strong>No tiene base:</strong> retirarse el día del remate no cuesta
+            nada. El ② no permite eso.</li>
           <li>Se puede visitar desde el 10 de agosto, y hasta el remate del 2 de
             setiembre queda tiempo para estudiar el expediente.</li>
           <li>El escenario bueno —comprar sin competencia— depende de algo que
@@ -1209,8 +1113,7 @@
       porque si el apartamento apareciera para reciclar o con ocupante, el
       número se cae —eso está medido más abajo—. La diferencia es que en ① eso
       se puede ver <em>antes</em> de pujar, y en ② no. Si alguien tiene
-      tolerancia a esperar un año y medio, ② es un negocio legítimo: no el
-      descarte que sugerí en la primera versión de este informe.
+      tolerancia a esperar un año y medio, ② es un negocio legítimo.
     </p>
 
     <p class="nota">
@@ -1236,9 +1139,8 @@
         <strong>en cuánto tiempo la deja</strong>. Ganar 22.000 en diecinueve
         meses es peor negocio que ganar 13.000 en ocho, porque en el segundo caso
         la plata vuelve y se puede usar otra vez. Medidos así, el de Montevideo
-        gana. Y tiene algo que el otro no tiene: si el día del remate la cosa se
-        pone cara, <strong>uno se va y no perdió nada</strong>. En Maldonado no
-        existe esa salida, porque hay un precio mínimo fijo.
+        gana. Y tiene algo que el otro no tiene: se puede abandonar el día del
+        remate sin costo, porque no hay precio mínimo que obligue.
       </p>
     </div>
   </section>
@@ -1503,28 +1405,7 @@
       llegar que acertarle al pronóstico.
     </p>
 
-    <p class="nota">
-      Dos correcciones de método antes de creerle a esta tabla: la primera
-      versión daba ratios del 35%, imposibles, porque comparaba contra un radio
-      de 1,2 km — desde Comercio y Avenida Italia eso alcanza Parque Batlle y
-      duplica la mediana de la cuadra. Y porque multiplicaba el USD/m² mediano
-      por la superficie, cuando los apartamentos chicos se venden mucho más caros
-      por metro. Ahora el radio es de 800 metros y se compara precio total contra
-      precio total.
-    </p>
 
-    <div class="claro">
-      <span class="rotulo">En pocas palabras</span>
-      <p>
-        Acá está la prueba de que el negocio existe y no es una ilusión: se
-        agarraron seis apartamentos que <em>ya</em> se remataron este año y se
-        comparó lo que se pagó por ellos contra lo que se pide en su cuadra.
-        <strong>En un remate se paga, típicamente, poco más de la mitad.</strong>
-        Pero varía muchísimo —desde el 27% hasta el 80%— y eso lo decide quién
-        aparezca ese día. Por eso hay que ir con un número escrito y no pasarse:
-        no hay forma de saber de antemano si va a haber competencia.
-      </p>
-    </div>
   </section>
 
   <hr class="regla-fina">
@@ -1620,25 +1501,7 @@
       elige. Ese diferencial es todo el negocio.
     </p>
 
-    <div class="claro">
-      <span class="rotulo">En pocas palabras</span>
-      <p>
-        La pregunta obvia es: ¿y si en vez de meterse en un remate compramos un
-        apartamento barato de los que se publican normalmente? Se revisaron
-        3.106 avisos buscando exactamente eso.
-        <strong>Casi todas las gangas eran mentira.</strong> El ejemplo perfecto:
-        uno en Aguada que pedía 48.500 en una zona de 115.000. Leyendo la letra
-        chica, arrastraba trece años de cuotas de la ANV que las paga el que
-        compra: el precio real era 112.000.
-      </p>
-      <p>
-        De los tres que resultaron reales, el mejor deja un 28% anual — apenas
-        menos que el remate y con una reventa bastante más difícil. La razón de
-        fondo es simple: <strong>el que vende por su cuenta puede esperar, y por
-        eso no regala. En un remate el que vende no elige.</strong> Ahí está toda
-        la diferencia.
-      </p>
-    </div>
+
   </section>
 
   <hr class="regla-fina">
@@ -1648,92 +1511,24 @@
     <h2>El otro camino sin remate, y por qué tampoco conviene</h2>
 
     <p>
-      El Banco Hipotecario vende directamente los inmuebles que ya recuperó, a
-      precio fijo publicado y con visita coordinable por WhatsApp. Sobre el papel
-      resuelve de un saque los dos problemas del remate: no hay que competir a
-      ciegas ni heredar un ocupante. Se revisó todo su stock.
-    </p>
-
-    <div class="tabla-scroll">
-      <table>
-        <caption>
-          Margen calculado con 15.000 de reforma, contra casas comparables de la
-          misma ciudad. Sin comisión de rematador: solo escritura e ITP.
-        </caption>
-        <thead>
-          <tr>
-            <th>Inmueble</th><th class="num">m²</th><th class="num">Precio</th>
-            <th class="num">Margen</th><th>Problema</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Rocha — República Española 332</td><td class="num">118</td>
-            <td class="num">47.000</td><td class="num">6.900 <span class="tenue">(11%)</span></td>
-            <td>Único sin obras irregulares, pero 12 casas en venta en la ciudad</td>
-          </tr>
-          <tr>
-            <td>Pando — Teresa Gaitán</td><td class="num">58</td>
-            <td class="num">81.000</td><td class="num marca">−53.975</td>
-            <td>Piden 81.000 donde el mercado comparable está en 48.500</td>
-          </tr>
-          <tr>
-            <td>Carmelo — 25 de Agosto</td><td class="num">86</td>
-            <td class="num">70.000</td><td class="num tenue">—</td>
-            <td>Obras a regularizar; ya supera el presupuesto de compra</td>
-          </tr>
-          <tr>
-            <td>Biarritz, Maldonado</td><td class="num">62</td>
-            <td class="num">105.000</td><td class="num tenue">—</td>
-            <td>Sólo promesa, obras irregulares</td>
-          </tr>
-          <tr>
-            <td>El Pinar — Giannattasio</td><td class="num">61</td>
-            <td class="num">165.000</td><td class="num tenue">—</td>
-            <td>Obras irregulares; fuera de presupuesto</td>
-          </tr>
-          <tr>
-            <td>Palermo — Ejido 963</td><td class="num">136</td>
-            <td class="num">165.000</td><td class="num tenue">—</td>
-            <td>Reciclado y sin observaciones, pero al triple del presupuesto</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p>
-      <strong>El BHU no vende barato.</strong> Vende a precio de mercado, y en
-      Pando por encima. La comodidad de comprar sin competir se paga exactamente
-      con el descuento que uno venía a buscar. Y hay una trampa que se repite en
-      casi todo el stock accesible: <strong>«presenta obras irregulares»</strong>
-      — el inmueble no se puede escriturar hasta regularizarlo ante la
-      Intendencia, así que se firma una promesa y se asume un trámite de plazo y
-      costo desconocidos.
+      El Banco Hipotecario vende directamente lo que ya recuperó, a precio fijo
+      publicado y con visita coordinable. Sobre el papel resuelve los dos
+      problemas del remate: no hay que competir a ciegas ni heredar un ocupante.
+      Se revisó todo su stock —siete propiedades— y <strong>no vende
+      barato</strong>: pide precio de mercado, y en Pando bastante por encima.
+      La única con margen real, una casa en Rocha, deja 11% y está en una ciudad
+      con doce casas en venta en total. Además, casi todo el stock accesible
+      «presenta obras irregulares»: no se puede escriturar hasta regularizarlo
+      ante la Intendencia, así que se firma una promesa y se asume un trámite de
+      plazo y costo desconocidos.
     </p>
 
     <p class="nota">
-      Vale seguirlo igual: el BHU rota su stock todos los meses y publica lo que
-      ya vendió. En la lista de señadas aparecen un apartamento de 110 m² en La
-      Unión a 60.000 y uno de 46 m² en Nuevo París a 25.500. A esos precios el
-      negocio sí existiría — la cuestión es estar mirando el mes que salgan.
+      Vale seguirlo igual: el BHU rota su stock todos los meses, y en su lista de
+      vendidas aparecen un apartamento de 110 m² en La Unión a 60.000 y uno de
+      46 m² en Nuevo París a 25.500. A esos precios el negocio sí existiría — la
+      cuestión es estar mirando el mes que salgan.
     </p>
-
-    <div class="claro">
-      <span class="rotulo">En pocas palabras</span>
-      <p>
-        El Banco Hipotecario vende sus propias casas a precio fijo, sin puja y
-        dejando visitarlas. Suena ideal, pero <strong>no vende barato</strong>:
-        pide lo mismo que el mercado, y en Pando bastante más. Encima, casi todo
-        lo que tiene accesible «presenta obras irregulares», que quiere decir que
-        no se puede poner a nombre de uno hasta arreglar papeles con la
-        Intendencia, sin saber cuánto tarda ni cuánto sale.
-      </p>
-      <p>
-        Igual conviene seguirlo: cambia el stock todos los meses, y en su lista
-        de vendidos aparecen cosas a 25.000 y 60.000. Ahí sí sería negocio. Es
-        cuestión de estar mirando el mes que salga.
-      </p>
-    </div>
   </section>
 
   <hr class="regla-fina">
@@ -1820,56 +1615,14 @@
     <h2>Qué tan completa es esta búsqueda</h2>
 
     <p>
-      Se rastrearon todas las fuentes de remates que existen en el país y se
+      Se rastrearon las ocho fuentes de remates que existen en el país y se
       verificó una por una que no estuvieran escondiendo avisos detrás de una
-      paginación o un filtro de fecha.
+      paginación o un filtro de fecha. Las que aportan son cinco: el Diario
+      Oficial —donde por ley debe publicarse todo remate judicial—,
+      rematadores.com, la Agencia Nacional de Vivienda, la Asociación de
+      Rematadores y el Banco Hipotecario. La cartelera de la Intendencia es
+      archivo muerto desde 2023 y Remate Mauad no tiene inmuebles agendados.
     </p>
-
-    <div class="tabla-scroll">
-      <table>
-        <thead>
-          <tr><th>Fuente</th><th class="num">Avisos</th><th>Estado</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Diario Oficial (IMPO)</td><td class="num">38</td>
-            <td>Completa — 38 anclas, 38 bloques. Publicación obligatoria por ley
-              para todo remate judicial, pero <strong>sólo muestra 15 días</strong></td>
-          </tr>
-          <tr>
-            <td>rematadores.com</td><td class="num">37</td>
-            <td>Completa — la más profunda en fechas lejanas; es la única que ya
-              lista el remate del 2 de setiembre</td>
-          </tr>
-          <tr>
-            <td>Agencia Nacional de Vivienda</td><td class="num">25</td>
-            <td>Nóminas y edictos en PDF de julio y agosto</td>
-          </tr>
-          <tr>
-            <td>Asociación de Rematadores</td><td class="num">10</td>
-            <td>Converge, sin aportar remates nuevos. Aporta el padrón y los
-              precios de martillo históricos</td>
-          </tr>
-          <tr>
-            <td>Banco Hipotecario</td><td class="num">7</td>
-            <td>Venta directa por la base. Fuente real pero sin descuento</td>
-          </tr>
-          <tr>
-            <td>Assad Remates</td><td class="num">2</td>
-            <td>Ambos ya cubiertos; su aviso completo no se veía desde
-              rematadores.com, que sólo publica su banner</td>
-          </tr>
-          <tr>
-            <td>Cartelera de la Intendencia</td><td class="num tenue">0</td>
-            <td class="tenue">Archivo muerto: nada posterior a 2023</td>
-          </tr>
-          <tr>
-            <td>Remate Mauad</td><td class="num tenue">0</td>
-            <td class="tenue">Sin inmuebles agendados</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
     <p>
       <strong>Hay un límite que ninguna búsqueda puede saltar:</strong> los
@@ -1880,20 +1633,6 @@
       es la razón de fondo para dejar el chequeo corriendo en vez de decidir todo
       ahora.
     </p>
-
-    <div class="claro">
-      <span class="rotulo">En pocas palabras</span>
-      <p>
-        No quedó ninguna fuente sin mirar: se revisaron las ocho que existen en
-        el país, incluida la del Diario Oficial, donde por ley tiene que
-        publicarse todo remate judicial. Pero hay un límite que no depende de
-        nosotros: <strong>los remates se anuncian recién dos o tres semanas
-        antes</strong>, así que al 31 de julio lo que se remata en setiembre
-        todavía no estaba publicado. Por eso la recomendación no es «esto es todo
-        lo que hay», sino «esto es todo lo que había al 31 de julio, y desde
-        mediados de agosto va a haber más».
-      </p>
-    </div>
   </section>
 
   <hr class="regla-fina">
