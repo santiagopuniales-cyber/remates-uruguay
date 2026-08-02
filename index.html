@@ -168,6 +168,54 @@
   .veredicto p { margin: 0; }
   .veredicto strong { font-weight: 650; }
 
+  /* ---- apertura en lenguaje llano ---- */
+
+  .apertura {
+    background: var(--papel-2);
+    border: 1px solid var(--linea-fuerte);
+    border-top: 3px solid var(--cota);
+    padding: 1.6rem 1.6rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 1px 3px var(--sombra);
+  }
+  .apertura h2 { font-size: 1.5rem; }
+  .apertura ol {
+    margin: 0;
+    padding-left: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .85rem;
+  }
+  .apertura li { padding-left: .2rem; }
+  .apertura li::marker {
+    font-family: var(--mono);
+    font-size: .8rem;
+    color: var(--cota);
+    font-weight: 600;
+  }
+  .apertura strong { font-weight: 650; }
+
+  /* ---- cierre en lenguaje llano ---- */
+
+  .claro {
+    border: 1px dashed var(--linea-fuerte);
+    padding: 1.05rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .claro .rotulo {
+    font-family: var(--mono);
+    font-size: .63rem;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: var(--cota);
+  }
+  .claro p { font-size: 1rem; }
+  .claro strong { font-weight: 650; }
+
   h2 {
     font-family: var(--serif);
     font-size: 1.72rem;
@@ -430,6 +478,7 @@
   <header class="cabecera">
     <div class="sello">
       <span>Relevamiento 31 · 07 · 2026</span>
+      <span>Cifras revisadas 02 · 08 · 2026</span>
       <span>7 fuentes</span>
       <span>2.908 avisos de mercado</span>
     </div>
@@ -441,12 +490,60 @@
     </p>
   </header>
 
+  <div class="apertura">
+    <h2>Lo que dice este informe, sin vueltas</h2>
+    <ol>
+      <li>
+        <strong>Hay uno solo que vale la pena: un apartamento en 8 de Octubre
+        y Vera, en Montevideo, que se remata el miércoles 2 de setiembre.</strong>
+        Es el único de toda la lista que se puede ir a ver por dentro antes de
+        comprarlo, y el único que no viene con gente viviendo adentro.
+      </li>
+      <li>
+        <strong>Vale unos 87.000 dólares y hay que pagar como máximo 48.000.</strong>
+        Ese número sale de restarle todo lo que hay que poner después: la
+        comisión del rematador, la escritura, los impuestos, unos 14.000 de
+        arreglos y lo que cuesta venderlo. Si se compra a 48.000, quedan unos
+        16.000 de ganancia limpia en unos ocho meses.
+      </li>
+      <li>
+        <strong>Es muy posible que lo perdamos, y está bien.</strong> Estos
+        apartamentos suelen rematarse cerca de 50.000, o sea un poco arriba de
+        lo que conviene pagar. Como no tiene precio mínimo, si la cosa sube uno
+        se levanta y se va sin haber perdido un peso. El negocio grande aparece
+        sólo si ese día no se presenta nadie más.
+      </li>
+      <li>
+        <strong>Los otros doce son más baratos, pero no sirven.</strong> Casi
+        todos tienen gente viviendo adentro: hay que pagar el cien por ciento,
+        escriturar, y recién ahí empezar un juicio de seis a diez meses para
+        poder entrar. Y casi todos están en ciudades donde hay siete u once
+        propiedades en venta en total, así que después no hay a quién
+        vendérselo.
+      </li>
+      <li>
+        <strong>También se probó comprar normal, sin remate, y no da.</strong>
+        Se revisaron 3.106 avisos comunes. Ninguno deja más que el remate, y los
+        que parecían ganga escondían deuda: uno que pedía 48.500 en realidad
+        salía 112.000 porque venía con trece años de cuotas impagas encima.
+      </li>
+      <li>
+        <strong>Lo que hay que hacer ahora son tres llamados y esperar.</strong>
+        Pedir la visita al rematador, pedirle a la administración cuánta plata
+        se debe de gastos comunes, y que un escribano lea el expediente. Y
+        volver a mirar a mediados de agosto: los remates de setiembre todavía no
+        están publicados y van a salir varios más.
+      </li>
+    </ol>
+  </div>
+
   <div class="veredicto">
+    <h2 style="font-size:1.35rem; margin-bottom:.2rem;">Lo que cambió desde el informe anterior</h2>
     <p>
-      <strong>Se revisaron las siete fuentes de remates que existen en Uruguay
-      y la conclusión no cambió:</strong> el apartamento de 8 de Octubre y Vera,
-      que remata el 2 de setiembre, sigue siendo el único que cumple el caso
-      completo.
+      Se volvieron a revisar las siete fuentes de remates que existen en el país
+      y <strong>la conclusión de fondo no cambió</strong>: el apartamento de 8 de
+      Octubre y Vera sigue siendo el único que cumple el caso completo. Lo que
+      cambió es que ahora hay números medidos donde antes había supuestos.
     </p>
     <p>
       Los once de la Agencia Nacional de Vivienda que entran por precio comparten
@@ -465,15 +562,18 @@
     <p>
       Y una corrección al informe anterior: descartar el apartamento de Maldonado
       por estar ocupado era demasiado simple. La ANV publica que el desalojo tarda
-      de seis a diez meses, así que ese costo se puede calcular. Medido en retorno
-      anualizado, <strong>en su escenario central le gana al de Montevideo</strong>.
-      Sigue segundo, pero por la forma del riesgo y no por la rentabilidad.
+      de seis a diez meses, así que ese costo se puede calcular en vez de
+      suponerlo. Calculado —abogado y escribano se llevan alrededor del 10% de lo
+      que se pagó— <strong>el de Maldonado queda segundo también en
+      rentabilidad</strong>: 36% anual en su mejor escenario contra 40% del de
+      Montevideo. Deja de ser un descarte por prejuicio y pasa a ser un segundo
+      puesto medido, que es distinto.
     </p>
     <p>
-      También se probó la alternativa obvia —comprar un aviso común barato, sin
-      remate— revisando 3.106 avisos. <strong>Ninguna compra del mercado abierto
-      le gana al remate</strong>, y los descuentos más llamativos resultaron ser
-      deuda hipotecaria escondida.
+      Y se probó la alternativa obvia —comprar un aviso común, sin remate—
+      revisando 3.106 avisos: <strong>ninguna compra del mercado abierto le gana
+      al remate</strong>, y los descuentos más llamativos resultaron ser deuda
+      hipotecaria escondida.
     </p>
   </div>
 
@@ -565,14 +665,16 @@
       <p class="nota">
         Cada tope ya descuenta la comisión del rematador (3,66%), escritura (3%),
         ITP (2%), USD 14.000 de reforma y un 5% de costos al vender, y deja un
-        retorno del 25% sobre todo lo invertido.
-        <strong>El número a llevar escrito a la sala es 50.000</strong>: arriba
-        de eso el negocio se lo come la reforma.
+        retorno del 25% sobre todo lo invertido. La valuación que se sostiene con
+        la muestra más cerrada es 87.000, y ésa manda:
+        <strong>el número a llevar escrito a la sala es 48.000</strong>. Los
+        50.000 de la última fila suponen revenderlo a 90.000, que es la lectura
+        optimista, no la de trabajo.
       </p>
 
       <p class="nota">
         Para asegurar esa valuación se relevaron 302 avisos más de los barrios
-        que rodean la esquina, porque apoyar una decisión de 50.000 dólares en
+        que rodean la esquina, porque apoyar una decisión de este tamaño en
         cinco comparables era poco. Con la muestra completa el valor converge:
         <strong>87.000</strong> con 10 comparables a menos de 800 metros y
         <strong>90.000</strong> con 35 a menos de 1,5 km. Una lectura intermedia
@@ -632,6 +734,24 @@
         </div>
       </div>
 
+      <div class="claro">
+        <span class="rotulo">En pocas palabras</span>
+        <p>
+          Un apartamento de 67 m² con dos dormitorios y dos baños, en un barrio
+          de Montevideo donde hay 261 apartamentos en venta, o sea que después
+          hay a quién vendérselo. No se remata porque alguien no pagó el banco,
+          sino porque <strong>dos dueños no se pusieron de acuerdo y el juez
+          mandó venderlo</strong>: por eso no hay nadie a quien echar. Se puede
+          visitar desde el 10 de agosto y hay un mes para estudiarlo.
+        </p>
+        <p>
+          <strong>Lo que falta averiguar antes de ir:</strong> cuánta plata se
+          debe de gastos comunes (la paga el que compra y nadie sabe cuánto es),
+          un papeleo de 2012 que quedó sin terminar y que tiene que mirar un
+          escribano, y que el edificio parece no tener ascensor.
+        </p>
+      </div>
+
       <p class="nota">
         Rematador Daniel Blanco (mat. 5640), cel. 099537163 · Juzgado Letrado Civil
         de 1º Turno, IUE 2-12009/2022 · Salón de la Asociación Nacional de
@@ -653,7 +773,7 @@
           <span class="chip">Jueves 6 de agosto, 13:00</span>
           <span class="chip">Base USD 51.594</span>
           <span class="chip mal">Ocupado</span>
-          <span class="chip mal">Solo 6 días para estudiarlo</span>
+          <span class="chip mal">Remata en 4 días</span>
         </div>
       </div>
 
@@ -667,8 +787,8 @@
           <dd>108.411</dd>
         </div>
         <div class="cifra">
-          <dt>Margen con reforma</dt>
-          <dd>43.264 <small>(62%)</small></dd>
+          <dt>Margen ya con desalojo</dt>
+          <dd>30.400 <small>(40%)</small></dd>
         </div>
         <div class="cifra">
           <dt>En venta a 3 km</dt>
@@ -701,11 +821,26 @@
           para recuperar el inmueble dura <strong>entre seis y diez meses</strong>.
         </p>
         <p>
-          Con ese número el costo se puede calcular en vez de suponerlo — y
-          medido en retorno anualizado, <strong>este negocio es competitivo</strong>.
-          En su escenario central rinde más que el de La Unión. Lo que lo deja
-          segundo no es la rentabilidad, es la forma del riesgo. Está detallado
-          más abajo.
+          Con ese número el costo se puede calcular en vez de suponerlo: el
+          abogado del desalojo y el escribano que constata en qué estado quedó
+          el inmueble se llevan alrededor del <strong>10% de lo que se
+          pagó</strong>, unos 5.500 dólares acá. Sumado eso,
+          <strong>el negocio sigue siendo bueno pero deja de ganar</strong>: 36%
+          anual en el mejor caso, contra 40% del de Montevideo comprado en su
+          tope. Está detallado más abajo.
+        </p>
+      </div>
+
+      <div class="claro">
+        <span class="rotulo">En pocas palabras</span>
+        <p>
+          Sobre el papel es el mejor de todos: se paga 56.000 por algo tasado en
+          108.000. El problema es que <strong>hay alguien viviendo adentro</strong>
+          y sacarlo lleva entre seis y diez meses de juicio, que se pagan del
+          bolsillo mientras la plata ya está puesta. Además se remata en cuatro
+          días, tiene precio mínimo —o se pagan 51.594 o no se juega— y no se
+          puede ver por dentro. Es un negocio real para alguien con paciencia y
+          plata quieta; no es el nuestro.
         </p>
       </div>
 
@@ -897,13 +1032,25 @@
         </tbody>
       </table>
     </div>
+
+    <div class="claro">
+      <span class="rotulo">En pocas palabras</span>
+      <p>
+        Hay diez apartamentos más baratos, algunos por menos de 25.000 dólares.
+        Se caen todos por lo mismo: <strong>vienen con gente adentro y están
+        donde no hay mercado</strong>. En Melo hay siete casas en venta en toda
+        la ciudad; en Ciudad del Plata, cinco. Comprar a mitad de precio ahí no
+        es una ganga: es lo que sale de verdad algo que tarda años en venderse.
+        Barato no es lo mismo que buen negocio.
+      </p>
+    </div>
   </section>
 
   <hr class="regla-fina">
 
   <!-- ============ anualizado ============ -->
   <section>
-    <h2>Por qué ① le gana a ②, y no es por rentabilidad</h2>
+    <h2>① contra ②, puestos en la misma escala</h2>
 
     <p>
       Un margen del 50% no le gana a uno del 25% si tarda el doble en cobrarse.
@@ -917,7 +1064,8 @@
       <table>
         <caption>
           Todo incluido: comisión del rematador, escritura, ITP, tributos de la
-          espera, reforma y 5% de costos al vender.
+          espera, el abogado y el escribano del desalojo, reforma y 5% de costos
+          al vender.
         </caption>
         <thead>
           <tr>
@@ -932,14 +1080,14 @@
             <td class="num">8</td><td class="num"><strong>72%</strong></td>
           </tr>
           <tr>
-            <td>② desalojo optimista — 6 meses</td>
-            <td class="num">70.896</td><td class="num">35.900</td>
-            <td class="num">13</td><td class="num"><strong>46%</strong></td>
-          </tr>
-          <tr>
             <td>① en el tope disciplinado — 48.000</td>
             <td class="num">66.157</td><td class="num">16.493</td>
             <td class="num">8</td><td class="num"><strong>40%</strong></td>
+          </tr>
+          <tr>
+            <td>② desalojo optimista — 6 meses</td>
+            <td class="num">76.396</td><td class="num">30.400</td>
+            <td class="num">13</td><td class="num"><strong>36%</strong></td>
           </tr>
           <tr>
             <td>① en el precio típico de remate — 50.460</td>
@@ -948,22 +1096,25 @@
           </tr>
           <tr>
             <td>② desalojo pesimista — 10 meses</td>
-            <td class="num">71.496</td><td class="num">35.300</td>
-            <td class="num">19</td><td class="num"><strong>29%</strong></td>
+            <td class="num">76.996</td><td class="num">29.800</td>
+            <td class="num">19</td><td class="num"><strong>23%</strong></td>
           </tr>
           <tr>
             <td>② si además la reforma se va a 20.000</td>
-            <td class="num">77.496</td><td class="num">29.300</td>
-            <td class="num">19</td><td class="num marca"><strong>22%</strong></td>
+            <td class="num">82.996</td><td class="num">23.800</td>
+            <td class="num">19</td><td class="num marca"><strong>17%</strong></td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <p>
-      <strong>En su mejor escenario, Maldonado le gana.</strong> Eso contradice
-      lo que dije al principio y hay que decirlo. La diferencia está en la forma
-      de la distribución, no en el promedio:
+      <strong>El mejor escenario de Maldonado cae justo en el medio de los de
+      Montevideo:</strong> le gana al caso en que la sala nos hace pagar caro
+      (32%), y pierde contra el caso en que se compra en el tope (40%). Dicho de
+      otro modo, para que ② convenga tienen que salir bien las diez cosas del
+      desalojo <em>y</em> salir mal el remate de ①. Y la diferencia de fondo no
+      está en el promedio sino en cómo se abre cada uno:
     </p>
 
     <div class="argumentos">
@@ -973,20 +1124,20 @@
           <li><strong>No tiene base.</strong> Si la puja sube, uno se levanta y
             se va sin haber perdido un peso. Esa opción de salida es gratis y
             vale mucho.</li>
-          <li>Se puede visitar antes y hay 33 días para estudiar el expediente.</li>
+          <li>Se puede visitar antes y hay un mes para estudiar el expediente.</li>
           <li>El escenario bueno —comprar sin competencia— depende de algo que
             pasa seguido en remates de barrio.</li>
         </ul>
       </div>
       <div class="arg contra">
-        <div class="arg-titulo">② va de 22% a 46%</div>
+        <div class="arg-titulo">② va de 17% a 36%</div>
         <ul>
           <li><strong>Tiene base fija.</strong> O se pagan 51.594 o no se juega:
             no existe el escenario de comprar barato.</li>
-          <li><strong>Remata en seis días.</strong> No alcanza para leer el
+          <li><strong>Remata en cuatro días.</strong> No alcanza para leer el
             expediente ni para pedir la deuda de gastos comunes.</li>
           <li>No se puede ver por dentro, y un inmueble entregado tras un
-            desalojo rara vez está entero: ahí se va el escenario de 22%.</li>
+            desalojo rara vez está entero: ahí se va el escenario de 17%.</li>
           <li>Los seis a diez meses son un promedio estadístico, no una
             garantía.</li>
         </ul>
@@ -994,10 +1145,10 @@
     </div>
 
     <p>
-      Dicho de otro modo: <strong>① tiene mejor techo y mejor piso</strong>, y
-      además permite arrepentirse. Pero si alguien tiene tolerancia a esperar un
-      año y medio y el capital quieto no le duele, ② es un negocio legítimo — no
-      el descarte que sugerí en la primera versión de este informe.
+      En resumen: <strong>① tiene mejor techo y mejor piso</strong>, y además
+      permite arrepentirse. Pero si alguien tiene tolerancia a esperar un año y
+      medio y el capital quieto no le duele, ② es un negocio legítimo — no el
+      descarte que sugerí en la primera versión de este informe.
     </p>
 
     <p class="nota">
@@ -1006,6 +1157,19 @@
       quedarse igual con el de Montevideo del 2 de setiembre. Perder el primero
       no cierra la puerta del segundo.
     </p>
+
+    <div class="claro">
+      <span class="rotulo">En pocas palabras</span>
+      <p>
+        No alcanza con mirar cuánta plata deja cada uno: hay que mirar
+        <strong>en cuánto tiempo la deja</strong>. Ganar 30.000 en diecinueve
+        meses es peor negocio que ganar 16.000 en ocho, porque en el segundo caso
+        la plata vuelve y se puede usar otra vez. Medidos así, el de Montevideo
+        gana. Y tiene algo que el otro no tiene: si el día del remate la cosa se
+        pone cara, <strong>uno se va y no perdió nada</strong>. En Maldonado no
+        existe esa salida, porque hay un precio mínimo fijo.
+      </p>
+    </div>
   </section>
 
   <hr class="regla-fina">
@@ -1075,6 +1239,19 @@
       por metro. Ahora el radio es de 800 metros y se compara precio total contra
       precio total.
     </p>
+
+    <div class="claro">
+      <span class="rotulo">En pocas palabras</span>
+      <p>
+        Acá está la prueba de que el negocio existe y no es una ilusión: se
+        agarraron seis apartamentos que <em>ya</em> se remataron este año y se
+        comparó lo que se pagó por ellos contra lo que vale su cuadra.
+        <strong>En un remate se paga, típicamente, poco más de la mitad.</strong>
+        Pero varía muchísimo —desde el 27% hasta el 80%— y eso lo decide quién
+        aparezca ese día. Por eso hay que ir con un número escrito y no pasarse:
+        no hay forma de saber de antemano si va a haber competencia.
+      </p>
+    </div>
   </section>
 
   <hr class="regla-fina">
@@ -1169,6 +1346,26 @@
       vende puede esperar. El remate descuenta 42%, porque el que vende no
       elige. Ese diferencial es todo el negocio.
     </p>
+
+    <div class="claro">
+      <span class="rotulo">En pocas palabras</span>
+      <p>
+        La pregunta obvia es: ¿y si en vez de meterse en un remate compramos un
+        apartamento barato de los que se publican normalmente? Se revisaron
+        3.106 avisos buscando exactamente eso.
+        <strong>Casi todas las gangas eran mentira.</strong> El ejemplo perfecto:
+        uno en Aguada que pedía 48.500 en una zona de 115.000. Leyendo la letra
+        chica, arrastraba trece años de cuotas de la ANV que las paga el que
+        compra: el precio real era 112.000.
+      </p>
+      <p>
+        De los tres que resultaron reales, el mejor deja un 37% anual — apenas
+        menos que el remate y con una reventa bastante más difícil. La razón de
+        fondo es simple: <strong>el que vende por su cuenta puede esperar, y por
+        eso no regala. En un remate el que vende no elige.</strong> Ahí está toda
+        la diferencia.
+      </p>
+    </div>
   </section>
 
   <hr class="regla-fina">
@@ -1247,6 +1444,23 @@
       Unión a 60.000 y uno de 46 m² en Nuevo París a 25.500. A esos precios el
       negocio sí existiría — la cuestión es estar mirando el mes que salgan.
     </p>
+
+    <div class="claro">
+      <span class="rotulo">En pocas palabras</span>
+      <p>
+        El Banco Hipotecario vende sus propias casas a precio fijo, sin puja y
+        dejando visitarlas. Suena ideal, pero <strong>no vende barato</strong>:
+        pide lo mismo que el mercado, y en Pando bastante más. Encima, casi todo
+        lo que tiene accesible «presenta obras irregulares», que quiere decir que
+        no se puede poner a nombre de uno hasta arreglar papeles con la
+        Intendencia, sin saber cuánto tarda ni cuánto sale.
+      </p>
+      <p>
+        Igual conviene seguirlo: cambia el stock todos los meses, y en su lista
+        de vendidos aparecen cosas a 25.000 y 60.000. Ahí sí sería negocio. Es
+        cuestión de estar mirando el mes que salga.
+      </p>
+    </div>
   </section>
 
   <hr class="regla-fina">
@@ -1370,6 +1584,19 @@
       es la razón de fondo para dejar el chequeo corriendo en vez de decidir todo
       ahora.
     </p>
+
+    <div class="claro">
+      <span class="rotulo">En pocas palabras</span>
+      <p>
+        No quedó ninguna fuente sin mirar: se revisaron las ocho que existen en
+        el país, incluida la del Diario Oficial, donde por ley tiene que
+        publicarse todo remate judicial. Pero hay un límite que no depende de
+        nosotros: <strong>los remates se anuncian recién dos o tres semanas
+        antes</strong>, así que lo que se remata en setiembre todavía no está
+        publicado. Por eso la recomendación no es «esto es todo lo que hay», sino
+        «esto es todo lo que hay hoy, y a mediados de agosto va a haber más».
+      </p>
+    </div>
   </section>
 
   <hr class="regla-fina">
